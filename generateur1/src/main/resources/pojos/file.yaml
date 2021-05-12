@@ -1,0 +1,224 @@
+Courrier:
+    id: Long ID
+    idCourrier: String REF 
+    subject: String
+    description: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+    delai: Double
+    relance: Double
+    dateRelance: Date
+    accuse: Boolean
+    reponse: Boolean
+    dateAccuse: Date
+    dateReponse: Date
+    status: Status
+    typeCourrier: TypeCourrier
+    receivedAt: Date
+    instruction : String
+    expediteurDesc: String
+    sentAt : Date
+    destinataireDesc: String
+    destinataireVille: String
+    courrierObject: CourrierObject
+    voie: Voie
+    natureCourrier: NatureCourrier
+    linkedTo: Courrier
+    expeditor: Expeditor
+    destinator: Expeditor
+    coordinator: LeService
+    emetteur: LeService
+    evaluation: Evaluation
+    expeditorType: ExpeditorType
+    subdivision: Subdivision
+    tasks: Task List
+    courrierServiceItems: CourrierServiceItem List
+TypeCourrier:
+    id: Long ID
+    libelle: String REF
+    libelleArab: String
+    code: String
+NatureCourrier:
+    id: Long ID
+    libelle: String REF
+    delai: Double
+    relance: Double
+    libelleArab: String
+    code: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Voie:
+    id: Long ID
+    libelle: String REF
+    libelleArab: String
+    code: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Expeditor:
+    id: Long ID
+    title: String REF
+    titleArab: String
+    code: String
+    description: String
+    nature: String
+    age: Integer
+    sexe: Sexe
+    nationality: Nationality
+    adress: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Sexe:
+    id: Long ID
+    libelle: String REF
+    libelleArab: String
+Nationality:
+    id: Long ID
+    libelle: String REF
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+ExpeditorType:
+    id: Long ID
+    title: String REF
+    libelleArab: String
+    code: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Subdivision:
+    id: Long ID
+    title: String REF
+    libelleArab: String
+    code: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+LeService:
+    id: Long ID
+    title: String REF
+    libelleArab: String
+    code: String
+    description: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Evaluation:
+    id: Long ID
+    title: String REF
+    libelleArab: String
+    code: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+CourrierObject:
+    id: Long ID
+    title: String REF
+    titleArab: String
+    code: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+ModelLettreReponse:
+    id: Long ID
+    libelle: String REF
+    libelleArab: String
+    code: String
+    chemin: String
+    categorieModelLettreReponse: CategorieModelLettreReponse
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+CategorieModelLettreReponse:
+    id: Long ID
+    libelle: String REF
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Bordereau:
+    id: Long ID
+    libelle: String REF
+    description: String
+    nombrePieceJointe: Integer
+    dateBordereaux: Date
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Status:
+    id: Long ID
+    libelle: String REF
+    libelleArab: String
+    code: String
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Employee:
+    id: Long ID
+    title: String REF
+    user: User
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+CourrierServiceItem:
+    id: Long ID
+    courrier: Courrier
+    service: LeService
+Task:
+    id: Long ID
+    title: String REF
+    description: String
+    observation: String
+    status: Status
+    delai: Double
+    relance: Double
+    accuse: Boolean
+    reponse: Boolean
+    dateAccuse: Date
+    dateReponse: Date
+    createdAt: Date
+    updatedAt: Date
+    assignedAt: Date
+    processedAt: Date
+    createdBy: User
+    updatedBy: User
+    courrier: Courrier
+    assigne: User
+User:
+    id: Long ID
+    username: String REF
+    password: String
+    email: String
+    accountNonExpired: Boolean
+    accountNonLocked: Boolean
+    credentialsNonExpired: Boolean
+    enabled: Boolean
+    roles: Role List
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User
+Role:
+    id: Long ID
+    authority: String REF
+    createdAt: Date
+    updatedAt: Date
+    createdBy: User
+    updatedBy: User

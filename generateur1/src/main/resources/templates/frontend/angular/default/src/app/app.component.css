@@ -1,0 +1,16 @@
+
+/* app-message{
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 20px;
+    position: absolute;
+    bottom:0;
+} */
+.changed-view{
+    padding-top: 8px;
+    width: 100%;
+    height: 80%;
+    /* position: absolute;
+    bottom:0; */
+}

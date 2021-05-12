@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+
+
+app-root{
+   height: 100%;
+   width: 100%;
+}
+a:hover{
+   text-decoration: none;   
+  }
+html, body { height: 100%; }
+
+
+.ui-overlaypanel-content{
+    background-color: #1b1e21;
+     color: whitesmoke;
+    z-index: 1000;
+    display: block;
+    width:30vw;
+
+}
+body .ui-overlaypanel{
+    border: 1px solid #222835 !important;
+    box-shadow: 1px 1px 7px rgba(88, 88, 88, 0.6);
+}
+
+body .ui-overlaypanel .ui-overlaypanel-close{
+background-color: black !important;
+    font-size: 10px;
+
+}
+
+body .ui-menu {
+    background-color: #1b1e21 !important;
+    color: whitesmoke !important;
+    border: 1px solid #007ad9 !important;
+    box-shadow: 1px 1px 7px rgba(88, 88, 88, 0.6) !important;
+}
+body .ui-menu .ui-submenu-header {
+    background-color: #1d2124 !important;
+    color: whitesmoke !important;
+}

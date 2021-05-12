@@ -1,0 +1,339 @@
+"pojos": [
+    {
+        "fields": [
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "name"
+            },
+            {
+                "type": {
+                    "simpleName": "Long"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "id"
+            },
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "lyrics"
+            },
+            {
+                "type": {
+                    "simpleName": "Artist"
+                },
+                "simple": false,
+                "comboBox": false,
+                "name": "artist",
+                "generic": true
+            },
+            {
+                "type": {
+                    "simpleName": "Album"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "album",
+                "generic": true
+            }
+        ],
+        "fieldsGeneric": [
+            {
+                "type": {
+                    "simpleName": "Artist"
+                },
+                "simple": false,
+                "comboBox": false,
+                "name": "artist",
+                "generic": true
+            },
+            {
+                "type": {
+                    "simpleName": "Album"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "album",
+                "generic": true
+            }
+        ],
+        "fieldsSimple": [
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "name"
+            },
+            {
+                "type": {
+                    "simpleName": "Long"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "id"
+            },
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "lyrics"
+            }
+        ],
+        "fieldsList": [],
+        "fieldsSimpleNumberOrDate": [],
+        "fieldsSimpleStringOrBoolean": [],
+        "name": "Song",
+        "id": {
+            "type": {
+                "simpleName": "Long"
+            },
+            "simple": true,
+            "comboBox": true,
+            "name": "id"
+        },
+        "reference": {
+            "type": {
+                "simpleName": "String"
+            },
+            "simple": true,
+            "comboBox": true,
+            "name": "name"
+        }
+    },
+    {
+        "fields": [
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "name"
+            },
+            {
+                "type": {
+                    "simpleName": "Long"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "id"
+            },
+            {
+                "type": {
+                    "simpleName": "Date"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "releaseDate"
+            },
+            {
+                "type": {
+                    "simpleName": "Song"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "songs",
+                "list": true
+            },
+            {
+                "type": {
+                    "simpleName": "Artist"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "artist",
+                "generic": true
+            }
+        ],
+        "fieldsGeneric": [
+            {
+                "type": {
+                    "simpleName": "Artist"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "artist",
+                "generic": true
+            }
+        ],
+        "fieldsSimple": [
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "name"
+            },
+            {
+                "type": {
+                    "simpleName": "Long"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "id"
+            },
+            {
+                "type": {
+                    "simpleName": "Date"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "releaseDate"
+            }
+        ],
+        "fieldsList": [
+            {
+                "type": {
+                    "simpleName": "Song"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "songs",
+                "list": true
+            }
+        ],
+        "fieldsSimpleNumberOrDate": [],
+        "fieldsSimpleStringOrBoolean": [],
+        "name": "Album",
+        "id": {
+            "type": {
+                "simpleName": "Long"
+            },
+            "simple": true,
+            "comboBox": true,
+            "name": "id"
+        },
+        "reference": {
+            "type": {
+                "simpleName": "String"
+            },
+            "simple": true,
+            "comboBox": true,
+            "name": "name"
+        }
+    },
+    {
+        "fields": [
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "name"
+            },
+            {
+                "type": {
+                    "simpleName": "Long"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "id"
+            },
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "lastname"
+            },
+            {
+                "type": {
+                    "simpleName": "Song"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "songs",
+                "list": true
+            },
+            {
+                "type": {
+                    "simpleName": "Album"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "albums",
+                "list": true
+            }
+        ],
+        "fieldsGeneric": [],
+        "fieldsSimple": [
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "name"
+            },
+            {
+                "type": {
+                    "simpleName": "Long"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "id"
+            },
+            {
+                "type": {
+                    "simpleName": "String"
+                },
+                "simple": true,
+                "comboBox": true,
+                "name": "lastname"
+            }
+        ],
+        "fieldsList": [
+            {
+                "type": {
+                    "simpleName": "Song"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "songs",
+                "list": true
+            },
+            {
+                "type": {
+                    "simpleName": "Album"
+                },
+                "simple": false,
+                "comboBox": true,
+                "name": "albums",
+                "list": true
+            }
+        ],
+        "fieldsSimpleNumberOrDate": [],
+        "fieldsSimpleStringOrBoolean": [],
+        "name": "Artist",
+        "id": {
+            "type": {
+                "simpleName": "Long"
+            },
+            "simple": true,
+            "comboBox": true,
+            "name": "id"
+        },
+        "reference": {
+            "type": {
+                "simpleName": "String"
+            },
+            "simple": true,
+            "comboBox": true,
+            "name": "name"
+        }
+    }
+]

@@ -1,0 +1,1 @@
+UPDATE `project_template` SET `path` = 'src\\main\\resources\\templates\\backend\\spring\\default' WHERE `project_template`.`id` = 2;

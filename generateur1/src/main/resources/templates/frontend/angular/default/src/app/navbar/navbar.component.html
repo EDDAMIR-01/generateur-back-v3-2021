@@ -1,0 +1,31 @@
+<nav id="sidebar" [class.active]="opened" style="min-height: 100vh">
+    <div class="p-4 pt-5">
+
+
+
+        <div class="mt-4" *ngFor="let sidebarItem of sidebarItems">
+
+            <ul class="list-unstyled components mb-5">
+                <li routerLinkActive #rla="routerLinkActive" [class.active]="rla.isActive" *ngFor="let i of sidebarItem.items">
+
+                    <a *ngIf="!i.items" [routerLink]="i.routerLink"><i [class]="i.icon"></i>  {{i.label}}</a>
+                    <a *ngIf="i.items && i.routerLink" [href]="'#'+i.id" data-toggle="collapse" [routerLink]="i.routerLink"
+                       [attr.aria-expanded]="rla.isActive" class="dropdown-toggle"><i [class]="i.icon"></i>  {{i.label}}</a>
+                    <a *ngIf="i.items && !i.routerLink" [href]="'#'+i.id" data-toggle="collapse"
+                       [attr.aria-expanded]="rla.isActive" class="dropdown-toggle"><i [class]="i.icon"></i>  {{i.label}}</a>
+                    <ul *ngIf="i.items" [class]="rla.isActive? 'collapse list-unstyled show':'collapse list-unstyled'"
+                        [id]="i.id">
+                        <li routerLinkActive="active" *ngFor="let subItem of i.items">
+                            <a [routerLink]="subItem.routerLink"><i [class]="subItem.icon"></i>  {{subItem.label}}</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+</nav>
